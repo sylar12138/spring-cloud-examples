@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    instance-id: ${eureka.instance.hostname}:${server.port}
+    lease-renewal-interval-in-seconds: 200 #契约更新间隔
+    lease-expiration-duration-in-seconds: 400 #契约过期时间
+    hostname: localhost
+server:
+  port: 10002
+  
+hello.me: hello111111111
